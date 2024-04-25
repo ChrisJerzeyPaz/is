@@ -7,10 +7,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix, classification_report
 
-# Load the dataset
+#Load the dataset
 @st.cache  # Add caching so that data is loaded only once
 def load_data():
-    data = pd.read_csv('seed_data.csv')
+    data = pd.read_csv('Seed_Data.csv')
     return data
 
 # Function to preprocess and split the data
